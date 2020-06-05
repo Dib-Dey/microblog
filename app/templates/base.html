@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Flask project!</title>
+        {% endif %}
+    </head>
+<body>
+    <h1>Example Project to make a login page for user</h1>
+    <p>This is an example of a basic HTML page.</p>
+    <div>Microblog: <a href="/index">Home</a></div>
+    <div>Login: <a href="/form">Login</a></div>
+    {% block content %}{% endblock %}
+</body>
+</html>
+
