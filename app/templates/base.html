@@ -11,10 +11,10 @@
     <h1>Example Project to make a login page for user</h1>
     <h2>This is an example of a basic HTML page.</h2>
     <div>
-        Microblog: <a href="/index">Home</a>
+        Microblog: <a href={{url_for('index')}}>Home</a>
     </div>
     <div>
-        Login: <a href="/form">Login</a>
+        Login: <a href={{url_for('form')}}>Login</a>
     </div>
     <hr>
     {% with messages = get_flashed_messages() %}
